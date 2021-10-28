@@ -8,7 +8,7 @@
         <el-container>
           <el-scrollbar>
             <el-aside>
-              <Card v-for="(user, i) in users" :phone="phone" :user="user" :key="i" />
+              <Card v-for="(user, i) in users" :user="user" :key="i" />
             </el-aside>
           </el-scrollbar>
           <el-container>
@@ -42,10 +42,6 @@ export default {
     },
     locations() {
       return store.getters.locations;
-    },
-    phone() {
-      console.log("TREMOÇO", store.getters.phoneNumber);
-      return store.getters.phoneNumber;
     },
   },
 };

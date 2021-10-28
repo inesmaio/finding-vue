@@ -51,7 +51,6 @@ export default createStore<State>({
       try {
         const res = await fetch("https://jsonplaceholder.typicode.com/users");
         const jsonRes = await res.json();
-        console.log(jsonRes);
         commit("setUsers", jsonRes);
       } finally {
         commit("setLoading", false);

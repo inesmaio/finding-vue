@@ -43,7 +43,7 @@
               </div>
             </el-container>
             <router-link to="/" tag="button">
-              <Button :lable="lable" :type="type" />
+              <Button lable="Home" type="success" />
             </router-link>
           </el-main>
         </el-container>
@@ -67,13 +67,6 @@ export default {
     Button,
     Input,
     Map,
-  },
-  data() {
-    return {
-      //Props to Button Component
-      lable: "Home",
-      type: "success",
-    };
   },
   computed: {
     user() {
